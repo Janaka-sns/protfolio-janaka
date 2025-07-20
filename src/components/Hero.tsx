@@ -1,3 +1,4 @@
+
 import { ArrowDown, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -66,9 +67,20 @@ const Hero = () => {
             <div className="relative">
               <div className="w-80 h-80 rounded-full bg-gradient-primary p-1">
                 <div className="w-full h-full rounded-full bg-background flex items-center justify-center overflow-hidden">
-                  <div className="w-72 h-72 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center text-6xl font-bold text-primary">
-                    JK
-                  </div>
+                  <img 
+                    src="https://i.postimg.cc/YhdTfGzR/image.png"
+                    alt="Janaka Kumara - Software Engineer"
+                    className="w-full h-full object-cover rounded-full"
+                    onError={(e) => {
+                      // Fallback to initials if image fails to load
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      const parent = target.parentElement;
+                      if (parent) {
+                        parent.innerHTML = '<div class="w-72 h-72 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center text-6xl font-bold text-primary">JK</div>';
+                      }
+                    }}
+                  />
                 </div>
               </div>
               <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-30 blur-xl animate-pulse"></div>
