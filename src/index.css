@@ -2,41 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Professional Dark Portfolio Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Dark Theme Base Colors */
+    --background: 220 13% 8%;
+    --foreground: 210 40% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card System */
+    --card: 220 13% 12%;
+    --card-foreground: 210 40% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Interactive Elements */
+    --popover: 220 13% 12%;
+    --popover-foreground: 210 40% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Brand Colors - Professional Teal/Blue */
+    --primary: 187 85% 53%;
+    --primary-foreground: 220 13% 8%;
+    --primary-glow: 187 85% 65%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary System */
+    --secondary: 220 13% 16%;
+    --secondary-foreground: 210 40% 95%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted Elements */
+    --muted: 220 13% 16%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent System */
+    --accent: 187 85% 53%;
+    --accent-foreground: 220 13% 8%;
 
-    --destructive: 0 84.2% 60.2%;
+    /* System Colors */
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders & Inputs */
+    --border: 220 13% 20%;
+    --input: 220 13% 16%;
+    --ring: 187 85% 53%;
 
-    --radius: 0.5rem;
+    /* Design System Extensions */
+    --surface: 220 13% 14%;
+    --surface-hover: 220 13% 18%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(187 85% 53%), hsl(187 85% 65%));
+    --gradient-dark: linear-gradient(135deg, hsl(220 13% 8%), hsl(220 13% 12%));
+    --gradient-surface: linear-gradient(135deg, hsl(220 13% 12%), hsl(220 13% 16%));
+    
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(187 85% 53% / 0.2);
+    --shadow-card: 0 4px 24px hsl(220 13% 4% / 0.4);
+    --shadow-elevated: 0 8px 40px hsl(220 13% 4% / 0.6);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -92,6 +118,7 @@ All colors MUST be HSL.
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+  }
 }
 
 @layer base {
@@ -100,6 +127,116 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer components {
+  /* Enhanced Button Variants */
+  .btn-glow {
+    @apply bg-gradient-to-r from-primary to-primary/80 text-primary-foreground px-6 py-3 rounded-lg font-semibold;
+    @apply shadow-[0_0_20px_hsl(var(--primary)/0.3)] hover:shadow-[0_0_30px_hsl(var(--primary)/0.5)];
+    @apply transform hover:scale-105 transition-all duration-300;
+  }
+  
+  .btn-outline-glow {
+    @apply border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold bg-transparent;
+    @apply hover:bg-primary hover:text-primary-foreground hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)];
+    @apply transform hover:scale-105 transition-all duration-300;
+  }
+
+  /* Card Components */
+  .card-glass {
+    @apply bg-card/50 backdrop-blur-sm border border-border rounded-xl;
+    @apply shadow-[0_4px_24px_hsl(var(--background)/0.4)];
+  }
+  
+  .card-elevated {
+    @apply bg-card border border-border rounded-xl;
+    @apply shadow-[0_8px_40px_hsl(var(--background)/0.6)];
+    @apply hover:shadow-[0_12px_48px_hsl(var(--background)/0.8)] transition-shadow duration-300;
+  }
+
+  /* Text Effects */
+  .text-glow {
+    @apply bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent;
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+  }
+  
+  .text-shimmer {
+    @apply bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent;
+    background-size: 200% auto;
+    animation: shimmer 3s linear infinite;
+  }
+
+  /* Hover Effects */
+  .hover-glow {
+    @apply transition-all duration-300;
+  }
+  
+  .hover-glow:hover {
+    @apply shadow-[0_0_20px_hsl(var(--primary)/0.2)];
+    transform: translateY(-2px);
+  }
+
+  /* Section Spacing */
+  .section-padding {
+    @apply py-20 px-6;
+  }
+  
+  .container-custom {
+    @apply max-w-6xl mx-auto;
+  }
+}
+
+@layer utilities {
+  /* Custom Animations */
+  @keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Animation Classes */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  .animate-slide-in-right {
+    animation: slideInRight 0.6s ease-out;
+  }
+  
+  .animate-shimmer {
+    animation: shimmer 3s linear infinite;
   }
 }
