@@ -23,7 +23,7 @@ const Hero = () => {
           <div className="text-center lg:text-left animate-fade-in-up">
             <div className="mb-6">
               <p className="text-primary font-semibold text-lg mb-2">Hello, I'm</p>
-              <h1 className="text-4xl md:text-6xl font-bold mb-4">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 leading-tight">
                 <span className="text-shimmer">Janaka Kumara</span>
               </h1>
               <h2 className="text-xl md:text-2xl text-muted-foreground font-medium">
