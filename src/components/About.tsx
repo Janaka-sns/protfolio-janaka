@@ -13,7 +13,7 @@ const About = () => {
   }, {
     title: "Software Engineer",
     company: "Digiratina Technology Solutions",
-    period: "2020 - 2021", 
+    period: "2021 - 2023", 
     responsibilities: ["Developed full-stack web applications using Java, Angular, and modern frameworks", "Implemented business automation systems improving operational efficiency", "Designed and optimized database schemas for high-performance applications", "Participated in Agile development processes and sprint planning"]
   }];
   return <section id="about" className="section-padding bg-surface">
