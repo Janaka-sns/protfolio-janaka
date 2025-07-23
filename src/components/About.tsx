@@ -3,7 +3,7 @@ const About = () => {
   const workExperience = [{
     title: "Senior Software Engineer",
     company: "Hitachi Digital Payment Solution", 
-    period: "2024 - Present",
+    period: "2025 - Present",
     responsibilities: ["Leading architecture decisions and technical strategy for enterprise payment solutions", "Driving innovation in microservices design and scalability improvements", "Mentoring development teams and establishing engineering best practices", "Collaborating with stakeholders to define technical roadmaps and deliverables"]
   }, {
     title: "Software Engineer",
