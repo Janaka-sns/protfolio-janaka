@@ -1,9 +1,14 @@
 import { Calendar, MapPin, GraduationCap, Briefcase } from 'lucide-react';
 const About = () => {
   const workExperience = [{
+    title: "Senior Software Engineer",
+    company: "Hitachi Digital Payment Solution", 
+    period: "2024 - Present",
+    responsibilities: ["Leading architecture decisions and technical strategy for enterprise payment solutions", "Driving innovation in microservices design and scalability improvements", "Mentoring development teams and establishing engineering best practices", "Collaborating with stakeholders to define technical roadmaps and deliverables"]
+  }, {
     title: "Software Engineer",
     company: "Hitachi Digital Payment Solution", 
-    period: "2021 - Present",
+    period: "2021 - 2024",
     responsibilities: ["Led development of enterprise payment solutions using Java and Spring Boot", "Architected and implemented microservices architecture for scalable applications", "Mentored junior developers in best practices and code quality standards", "Collaborated with cross-functional teams to deliver critical business features"]
   }, {
     title: "Software Engineer",
