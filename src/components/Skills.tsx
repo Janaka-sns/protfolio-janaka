@@ -1,6 +1,56 @@
-import { Code2, Database, Cloud, Wrench, Globe, Users } from 'lucide-react';
+
+import { 
+  Code2, Database, Cloud, Wrench, Globe, Users, 
+  FileCode, Terminal, GitBranch, Zap, Layers,
+  Shield, Settings, Brain, MessageSquare, Target
+} from 'lucide-react';
 
 const Skills = () => {
+  // Icon mapping for individual skills
+  const skillIcons = {
+    // Programming Languages
+    "Java": FileCode,
+    "TypeScript": FileCode,
+    "JavaScript": FileCode,
+    "Python": FileCode,
+    "SQL": Database,
+    
+    // Frontend Technologies
+    "Angular": Globe,
+    "React": Globe,
+    "HTML5/CSS3": Globe,
+    "Tailwind CSS": Globe,
+    "Bootstrap": Globe,
+    
+    // Backend & Databases
+    "Spring Boot": Zap,
+    "REST APIs": Layers,
+    "MySQL": Database,
+    "PostgreSQL": Database,
+    "Oracle": Database,
+    
+    // DevOps & Tools
+    "Docker": Terminal,
+    "Git": GitBranch,
+    "Microservices": Layers,
+    "Agile/Scrum": Target,
+    "Maven": Settings,
+    
+    // Business Solutions
+    "Camunda BPM": Wrench,
+    "Business Automation": Wrench,
+    "System Architecture": Layers,
+    "Performance Optimization": Zap,
+    "Debugging": Wrench,
+    
+    // Soft Skills
+    "Team Leadership": Users,
+    "Mentoring": Users,
+    "Problem Solving": Brain,
+    "Communication": MessageSquare,
+    "Project Management": Target
+  };
+
   const skillCategories = [
     {
       icon: Code2,
@@ -91,24 +141,29 @@ const Skills = () => {
               </div>
 
               <div className="space-y-4">
-                {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex}>
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm font-medium text-foreground">{skill.name}</span>
-                      <span className="text-xs text-muted-foreground">{skill.level}%</span>
+                {category.skills.map((skill, skillIndex) => {
+                  const SkillIcon = skillIcons[skill.name] || Code2;
+                  return (
+                    <div key={skillIndex}>
+                      <div className="flex items-center mb-2">
+                        <div className="p-1.5 bg-surface rounded mr-3">
+                          <SkillIcon className="text-primary" size={16} />
+                        </div>
+                        <span className="text-sm font-medium text-foreground">{skill.name}</span>
+                      </div>
+                      
+                      <div className="w-full bg-surface rounded-full h-2 ml-9">
+                        <div 
+                          className="bg-gradient-primary h-2 rounded-full transition-all duration-1000 ease-out"
+                          style={{ 
+                            width: `${skill.level}%`,
+                            animation: `skillLoad 1.5s ease-out ${skillIndex * 0.1}s both`
+                          }}
+                        ></div>
+                      </div>
                     </div>
-                    
-                    <div className="w-full bg-surface rounded-full h-2">
-                      <div 
-                        className="bg-gradient-primary h-2 rounded-full transition-all duration-1000 ease-out"
-                        style={{ 
-                          width: `${skill.level}%`,
-                          animation: `skillLoad 1.5s ease-out ${skillIndex * 0.1}s both`
-                        }}
-                      ></div>
-                    </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           ))}
