@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[80vh] lg:min-h-0">
           {/* Text Content */}
           <div className="text-center lg:text-left animate-fade-in-up">
-            <div className="mb-6 mt-[67px]">
+            <div className="mb-6 mt-[64px]">
               <p className="text-primary font-semibold text-lg mb-2">Hello, I'm</p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 break-words leading-tight">
                 <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-shimmer">Janaka Kumara</span>
