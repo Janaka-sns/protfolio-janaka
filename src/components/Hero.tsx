@@ -57,7 +57,8 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-end animate-slide-in-right">
             <div className="relative">
-              <div className="w-80 h-80 rounded-full bg-gradient-primary p-1">
+              {/* Main Profile Image */}
+              <div className="w-80 h-80 rounded-full bg-gradient-primary p-1 relative z-10">
                 <div className="w-full h-full rounded-full bg-background flex items-center justify-center overflow-hidden">
                   <img src="https://i.postimg.cc/pX19WWbQ/DSC-3701.jpg" alt="Janaka Kumara - Software Engineer" className="w-full h-full object-cover rounded-full" onError={e => {
                   // Fallback to initials if image fails to load
@@ -70,7 +71,40 @@ const Hero = () => {
                 }} />
                 </div>
               </div>
+              
+              {/* Decorative Elements */}
               <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-30 blur-xl animate-pulse"></div>
+              
+              {/* Floating Badge - Experience */}
+              <div className="absolute -top-4 -right-4 bg-background/95 backdrop-blur-sm border border-border rounded-2xl px-4 py-3 shadow-lg animate-float">
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                    <span className="text-xs font-bold text-primary-foreground">4+</span>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold">Years</p>
+                    <p className="text-xs text-muted-foreground">Experience</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Floating Badge - Projects */}
+              <div className="absolute -bottom-6 -left-8 bg-background/95 backdrop-blur-sm border border-border rounded-2xl px-4 py-3 shadow-lg animate-float" style={{animationDelay: '1s'}}>
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
+                    <span className="text-xs font-bold text-accent-foreground">20+</span>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold">Projects</p>
+                    <p className="text-xs text-muted-foreground">Completed</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Decorative Circles */}
+              <div className="absolute -top-8 left-8 w-16 h-16 bg-primary/20 rounded-full blur-sm animate-float" style={{animationDelay: '2s'}}></div>
+              <div className="absolute -bottom-4 right-12 w-12 h-12 bg-accent/20 rounded-full blur-sm animate-float" style={{animationDelay: '0.5s'}}></div>
+              <div className="absolute top-1/2 -left-6 w-8 h-8 bg-primary/30 rounded-full animate-float" style={{animationDelay: '1.5s'}}></div>
             </div>
           </div>
         </div>
