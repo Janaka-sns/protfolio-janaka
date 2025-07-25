@@ -17,14 +17,14 @@ const Hero = () => {
       animationDelay: '3s'
     }}></div>
 
-      <div className="container-custom relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container-custom relative z-10 px-4 sm:px-6">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[80vh] lg:min-h-0">
           {/* Text Content */}
           <div className="text-center lg:text-left animate-fade-in-up">
             <div className="mb-6">
               <p className="text-primary font-semibold text-lg mb-2">Hello, I'm</p>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 break-words">
-                <span className="text-shimmer">Janaka Kumara</span>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 break-words leading-tight">
+                <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-shimmer">Janaka Kumara</span>
               </h1>
               <h2 className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-medium break-words">Senior Software Engineer | Full-Stack Java & Angular</h2>
             </div>
