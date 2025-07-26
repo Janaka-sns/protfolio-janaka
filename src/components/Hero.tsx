@@ -61,7 +61,8 @@ const Hero = () => {
               <div className="w-80 h-80 rounded-full bg-gradient-primary p-1 relative z-10 group-hover:scale-105 transition-all duration-500">
                 <div className="w-full h-full rounded-full bg-background flex items-center justify-center overflow-hidden relative">
                   <img 
-                    src="https://i.postimg.cc/pX19WWbQ/DSC-3701.jpg" 
+                    // src="https://i.postimg.cc/pX19WWbQ/DSC-3701.jpg"
+                    src="https://i.postimg.cc/kM8LpkBX/prof-jana.jpg" 
                     alt="Janaka Kumara - Software Engineer" 
                     className="w-full h-full object-cover rounded-full transition-all duration-500 group-hover:scale-110" 
                     onError={e => {
