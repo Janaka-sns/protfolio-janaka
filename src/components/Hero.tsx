@@ -39,7 +39,20 @@ const Hero = () => {
               <Button onClick={() => scrollToSection('portfolio')} className="btn-glow">
                 View My Work
               </Button>
-              <Button variant="outline" className="btn-outline-glow">
+              <Button 
+                variant="outline" 
+                className="btn-outline-glow"
+                onClick={() => {
+                  // Replace this URL with your actual CV file URL or path
+                  const cvUrl = "/path-to-your-cv.pdf"; // Update this with your CV path
+                  const link = document.createElement('a');
+                  link.href = cvUrl;
+                  link.download = 'Janaka_Kumara_CV.pdf';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
+              >
                 <Download size={18} className="mr-2" />
                 Download CV
               </Button>
