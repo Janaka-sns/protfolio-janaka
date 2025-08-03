@@ -12,10 +12,8 @@ const Hero = () => {
   return <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-[60px]">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-dark"></div>
-      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-1/3 right-1/4 w-48 h-48 bg-accent/10 rounded-full blur-3xl animate-float" style={{
-      animationDelay: '3s'
-    }}></div>
+      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-1/3 right-1/4 w-48 h-48 bg-accent/10 rounded-full blur-3xl"></div>
 
       <div className="container-custom relative z-10 px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[80vh] lg:min-h-0">
@@ -73,19 +71,19 @@ const Hero = () => {
               {/* Abstract Background Shapes */}
               <div className="absolute inset-0 -z-10">
                 {/* Large organic shape */}
-                <div className="absolute -top-20 -left-20 w-96 h-96 bg-gradient-to-br from-primary/20 via-primary/10 to-transparent rounded-[40%_60%_70%_30%] animate-float blur-sm" style={{animationDuration: '8s'}}></div>
+                <div className="absolute -top-20 -left-20 w-96 h-96 bg-gradient-to-br from-primary/20 via-primary/10 to-transparent rounded-[40%_60%_70%_30%] blur-sm"></div>
                 
                 {/* Medium organic shape */}
-                <div className="absolute top-10 -right-16 w-72 h-72 bg-gradient-to-bl from-accent/25 via-accent/15 to-transparent rounded-[60%_40%_30%_70%] animate-float" style={{animationDelay: '2s', animationDuration: '10s'}}></div>
+                <div className="absolute top-10 -right-16 w-72 h-72 bg-gradient-to-bl from-accent/25 via-accent/15 to-transparent rounded-[60%_40%_30%_70%]"></div>
                 
                 {/* Small organic shape */}
-                <div className="absolute -bottom-10 left-8 w-48 h-48 bg-gradient-to-tr from-primary/15 via-accent/10 to-transparent rounded-[30%_70%_60%_40%] animate-float" style={{animationDelay: '4s', animationDuration: '6s'}}></div>
+                <div className="absolute -bottom-10 left-8 w-48 h-48 bg-gradient-to-tr from-primary/15 via-accent/10 to-transparent rounded-[30%_70%_60%_40%]"></div>
                 
                 {/* Additional floating elements */}
-                <div className="absolute top-1/3 left-1/4 w-32 h-32 bg-gradient-to-r from-primary/10 to-accent/10 rounded-[50%_70%_30%_50%] animate-float blur-xl" style={{animationDelay: '1s', animationDuration: '12s'}}></div>
+                <div className="absolute top-1/3 left-1/4 w-32 h-32 bg-gradient-to-r from-primary/10 to-accent/10 rounded-[50%_70%_30%_50%] blur-xl"></div>
                 
                 {/* Subtle background glow */}
-                <div className="absolute inset-0 bg-gradient-radial from-primary/5 via-transparent to-accent/5 animate-pulse" style={{animationDuration: '4s'}}></div>
+                <div className="absolute inset-0 bg-gradient-radial from-primary/5 via-transparent to-accent/5"></div>
               </div>
 
               {/* Main Profile Image with Enhanced Effects */}
@@ -113,32 +111,28 @@ const Hero = () => {
                 </div>
               </div>
               
-              {/* Animated Ring */}
-              <div className="absolute inset-0 rounded-full border-2 border-primary/30 animate-spin" style={{animationDuration: '20s'}}></div>
-              <div className="absolute inset-2 rounded-full border border-accent/20 animate-spin" style={{animationDuration: '15s', animationDirection: 'reverse'}}></div>
-              
               {/* Glow Effect */}
-              <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-20 blur-2xl animate-pulse group-hover:opacity-40 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-20 blur-2xl group-hover:opacity-40 transition-opacity duration-500"></div>
               
-              {/* Floating Tech Icons */}
-              <div className="absolute -top-8 -left-8 w-12 h-12 bg-background/90 backdrop-blur-sm border border-primary/20 rounded-xl flex items-center justify-center shadow-lg animate-float hover-scale cursor-pointer">
+              {/* Tech Icons */}
+              <div className="absolute -top-8 -left-8 w-12 h-12 bg-background/90 backdrop-blur-sm border border-primary/20 rounded-xl flex items-center justify-center shadow-lg hover-scale cursor-pointer">
                 <Code2 size={20} className="text-primary" />
               </div>
               
-              <div className="absolute top-8 -right-12 w-12 h-12 bg-background/90 backdrop-blur-sm border border-accent/20 rounded-xl flex items-center justify-center shadow-lg animate-float hover-scale cursor-pointer" style={{animationDelay: '0.5s'}}>
+              <div className="absolute top-8 -right-12 w-12 h-12 bg-background/90 backdrop-blur-sm border border-accent/20 rounded-xl flex items-center justify-center shadow-lg hover-scale cursor-pointer">
                 <Database size={20} className="text-accent" />
               </div>
               
-              <div className="absolute -bottom-8 left-16 w-12 h-12 bg-background/90 backdrop-blur-sm border border-primary/20 rounded-xl flex items-center justify-center shadow-lg animate-float hover-scale cursor-pointer" style={{animationDelay: '1s'}}>
+              <div className="absolute -bottom-8 left-16 w-12 h-12 bg-background/90 backdrop-blur-sm border border-primary/20 rounded-xl flex items-center justify-center shadow-lg hover-scale cursor-pointer">
                 <Globe size={20} className="text-primary" />
               </div>
               
-              <div className="absolute bottom-16 -right-8 w-12 h-12 bg-background/90 backdrop-blur-sm border border-accent/20 rounded-xl flex items-center justify-center shadow-lg animate-float hover-scale cursor-pointer" style={{animationDelay: '1.5s'}}>
+              <div className="absolute bottom-16 -right-8 w-12 h-12 bg-background/90 backdrop-blur-sm border border-accent/20 rounded-xl flex items-center justify-center shadow-lg hover-scale cursor-pointer">
                 <Zap size={20} className="text-accent" />
               </div>
               
-              {/* Floating Badge - Experience with Glass Effect */}
-              <div className="absolute -top-4 -right-4 bg-background/80 backdrop-blur-md border border-white/10 rounded-2xl px-4 py-3 shadow-2xl animate-float hover:bg-background/90 transition-all duration-300 cursor-pointer">
+              {/* Badge - Experience */}
+              <div className="absolute -top-4 -right-4 bg-background/80 backdrop-blur-md border border-white/10 rounded-2xl px-4 py-3 shadow-2xl hover:bg-background/90 transition-all duration-300 cursor-pointer">
                 <div className="flex items-center gap-2">
                   <div className="w-8 h-8 bg-gradient-to-r from-primary to-primary/80 rounded-full flex items-center justify-center shadow-inner">
                     <span className="text-xs font-bold text-primary-foreground">4+</span>
@@ -150,8 +144,8 @@ const Hero = () => {
                 </div>
               </div>
               
-              {/* Floating Badge - Projects with Glass Effect */}
-              <div className="absolute -bottom-6 -left-8 bg-background/80 backdrop-blur-md border border-white/10 rounded-2xl px-4 py-3 shadow-2xl animate-float hover:bg-background/90 transition-all duration-300 cursor-pointer" style={{animationDelay: '1s'}}>
+              {/* Badge - Projects */}
+              <div className="absolute -bottom-6 -left-8 bg-background/80 backdrop-blur-md border border-white/10 rounded-2xl px-4 py-3 shadow-2xl hover:bg-background/90 transition-all duration-300 cursor-pointer">
                 <div className="flex items-center gap-2">
                   <div className="w-8 h-8 bg-gradient-to-r from-accent to-accent/80 rounded-full flex items-center justify-center shadow-inner">
                     <span className="text-xs font-bold text-accent-foreground">20+</span>
@@ -164,19 +158,9 @@ const Hero = () => {
               </div>
               
               {/* Status Indicator */}
-              <div className="absolute top-4 left-4 w-6 h-6 bg-green-500 rounded-full animate-pulse border-2 border-background shadow-lg">
-                <div className="absolute inset-1 bg-green-400 rounded-full animate-ping"></div>
+              <div className="absolute top-4 left-4 w-6 h-6 bg-green-500 rounded-full border-2 border-background shadow-lg">
+                <div className="absolute inset-1 bg-green-400 rounded-full"></div>
               </div>
-              
-              {/* Floating Particles */}
-              <div className="absolute -top-12 left-12 w-2 h-2 bg-primary/60 rounded-full animate-float blur-sm" style={{animationDelay: '2s', animationDuration: '4s'}}></div>
-              <div className="absolute top-20 -left-8 w-1.5 h-1.5 bg-accent/60 rounded-full animate-float blur-sm" style={{animationDelay: '3s', animationDuration: '5s'}}></div>
-              <div className="absolute -bottom-8 right-8 w-2.5 h-2.5 bg-primary/40 rounded-full animate-float blur-sm" style={{animationDelay: '1s', animationDuration: '6s'}}></div>
-              <div className="absolute bottom-12 -right-12 w-1 h-1 bg-accent/40 rounded-full animate-float blur-sm" style={{animationDelay: '2.5s', animationDuration: '3s'}}></div>
-              
-              {/* Decorative Geometric Shapes */}
-              <div className="absolute -top-6 left-20 w-8 h-8 border border-primary/30 rotate-45 animate-float" style={{animationDelay: '1.5s'}}></div>
-              <div className="absolute bottom-8 left-2 w-6 h-6 border border-accent/30 rounded-full animate-float" style={{animationDelay: '2.5s'}}></div>
             </div>
           </div>
         </div>
