@@ -157,10 +157,6 @@ const Hero = () => {
                 </div>
               </div>
               
-              {/* Status Indicator */}
-              <div className="absolute top-4 left-4 w-6 h-6 bg-green-500 rounded-full border-2 border-background shadow-lg">
-                <div className="absolute inset-1 bg-green-400 rounded-full"></div>
-              </div>
             </div>
           </div>
         </div>
