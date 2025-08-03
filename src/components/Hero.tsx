@@ -70,13 +70,28 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-end animate-slide-in-right">
             <div className="relative group">
-              {/* Main Profile Image with Hover Effects */}
-              <div className="w-80 h-80 rounded-full bg-gradient-primary p-1 relative z-10 group-hover:scale-105 transition-all duration-500">
-                <div className="w-full h-full rounded-full bg-background flex items-center justify-center overflow-hidden relative">
+              {/* Abstract Background Shapes */}
+              <div className="absolute inset-0 -z-10">
+                {/* Large organic shape */}
+                <div className="absolute -top-20 -left-20 w-96 h-96 bg-gradient-to-br from-primary/20 via-primary/10 to-transparent rounded-[40%_60%_70%_30%] animate-float blur-sm" style={{animationDuration: '8s'}}></div>
+                
+                {/* Medium organic shape */}
+                <div className="absolute top-10 -right-16 w-72 h-72 bg-gradient-to-bl from-accent/25 via-accent/15 to-transparent rounded-[60%_40%_30%_70%] animate-float" style={{animationDelay: '2s', animationDuration: '10s'}}></div>
+                
+                {/* Small organic shape */}
+                <div className="absolute -bottom-10 left-8 w-48 h-48 bg-gradient-to-tr from-primary/15 via-accent/10 to-transparent rounded-[30%_70%_60%_40%] animate-float" style={{animationDelay: '4s', animationDuration: '6s'}}></div>
+                
+                {/* Additional floating elements */}
+                <div className="absolute top-1/3 left-1/4 w-32 h-32 bg-gradient-to-r from-primary/10 to-accent/10 rounded-[50%_70%_30%_50%] animate-float blur-xl" style={{animationDelay: '1s', animationDuration: '12s'}}></div>
+                
+                {/* Subtle background glow */}
+                <div className="absolute inset-0 bg-gradient-radial from-primary/5 via-transparent to-accent/5 animate-pulse" style={{animationDuration: '4s'}}></div>
+              </div>
+
+              {/* Main Profile Image with Enhanced Effects */}
+              <div className="w-80 h-80 rounded-full bg-gradient-to-br from-primary via-primary/80 to-accent p-1 relative z-20 group-hover:scale-105 transition-all duration-500 shadow-2xl">
+                <div className="w-full h-full rounded-full bg-background flex items-center justify-center overflow-hidden relative shadow-inner">
                   <img 
-                    // src="https://i.postimg.cc/pX19WWbQ/DSC-3701.jpg"
-                    // src="https://i.postimg.cc/kM8LpkBX/prof-jana.jpg" 
-                    // image remove url : https://postimg.cc/delete/Lw8qPb7j/30eec88a
                     src="https://i.postimg.cc/wj9t3kyq/IMG-3914.avif"
                     alt="Janaka Kumara - Software Engineer" 
                     className="w-full h-full object-cover rounded-full transition-all duration-500 group-hover:scale-110" 
@@ -86,12 +101,15 @@ const Hero = () => {
                       target.style.display = 'none';
                       const parent = target.parentElement;
                       if (parent) {
-                        parent.innerHTML = '<div class="w-72 h-72 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center text-6xl font-bold text-primary">JK</div>';
+                        parent.innerHTML = '<div class="w-full h-full rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center text-6xl font-bold text-primary">JK</div>';
                       }
                     }} 
                   />
-                  {/* Overlay on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
+                  {/* Enhanced overlay on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
+                  
+                  {/* Subtle inner glow */}
+                  <div className="absolute inset-2 rounded-full border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
               </div>
               
