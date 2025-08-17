@@ -41,11 +41,12 @@ const Hero = () => {
                 variant="outline" 
                 className="btn-outline-glow"
                 onClick={() => {
-                  // Replace this URL with your actual CV file URL or path
-                  const cvUrl = "/path-to-your-cv.pdf"; // Update this with your CV path
+                  // Google Drive direct download link
+                  const cvUrl = "https://drive.google.com/uc?export=download&id=1vZdr4bsSHS9h0YS0tUwe5Mi-YlsqHHDP";
                   const link = document.createElement('a');
                   link.href = cvUrl;
                   link.download = 'Janaka_Kumara_CV.pdf';
+                  link.target = '_blank';
                   document.body.appendChild(link);
                   link.click();
                   document.body.removeChild(link);
