@@ -95,7 +95,7 @@ const Footer = () => {
               © {currentYear} Janaka Kumara. All rights reserved.
             </div>
             <div className="flex items-center text-sm text-muted-foreground">
-              Made with <Heart size={14} className="text-primary mx-1" /> using React & Tailwind CSS
+              {/* Made with <Heart size={14} className="text-primary mx-1" /> using React & Tailwind CSS */}
             </div>
           </div>
         </div>
