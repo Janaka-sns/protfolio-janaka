@@ -1,73 +1,39 @@
-# Welcome to your Lovable project
+# Janaka Kumara
 
-## Project info
+**Senior Software Engineer | Java & Spring Boot Specialist | Full-Stack Developer**
 
-**URL**: https://lovable.dev/projects/164a36ee-4350-4942-bd3c-895b0a70cd58
+---
 
-## How can I edit this code?
+## About Me
 
-There are several ways of editing your application.
+I’m a passionate Senior Software Engineer with 4+ years of experience building payment solutions, web applications, and enterprise systems using Java, Spring Boot, and modern frontend technologies.  
+I specialize in designing scalable software architectures and delivering high-quality, maintainable code.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/164a36ee-4350-4942-bd3c-895b0a70cd58) and start prompting.
+## Skills
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Backend:** Java, Spring Boot, REST APIs, Microservices, Camunda BPM  
+- **Frontend:** Angular, JavaScript, HTML, CSS, Tailwind CSS  
+- **Databases:** MySQL, Oracle, PostgreSQL  
+- **DevOps & Tools:** Git, Docker, MS Azure, Agile, Jira, Advanced Debugging  
+- **Software Architecture:** Microservices, System Design, Enterprise Solutions  
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Featured Projects
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+> Projects will be added soon! Stay tuned.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Contact
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- **LinkedIn:** [Janaka Kumara](https://www.linkedin.com/in/janaka-kumara/)
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Portfolio
 
-**Edit a file directly in GitHub**
+My portfolio is planned to be hosted on **GitHub Pages**. Once deployed, you’ll be able to access it at:  
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/164a36ee-4350-4942-bd3c-895b0a70cd58) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
