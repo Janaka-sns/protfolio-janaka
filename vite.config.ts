@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
-  base: process.env.NODE_ENV === 'production' ? "/janaka-kumara-portfolio-site/" : "/",
+  base: process.env.NODE_ENV === 'production' ? "/protfolio-janaka/" : "/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
